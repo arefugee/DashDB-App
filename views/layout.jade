@@ -1,0 +1,50 @@
+doctype html
+html
+  head
+    title= title
+    
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+    script(src='//cdn.datatables.net/1.10.5/js/jquery.dataTables.js')
+    link(rel='stylesheet', type='text/css', href='//cdn.datatables.net/1.10.5/css/jquery.dataTables.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/table.css')
+    link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css')
+    script.
+        $(document).ready( function () {
+            $('#list').DataTable();
+
+            // Cycles to the previous item
+            $(".prev-slide").click(function(){
+                $("#myCarousel").carousel('prev');
+            });
+            // Cycles to the next item
+            $(".next-slide").click(function(){
+                $("#myCarousel").carousel('next');
+            });
+        } );
+  body
+    .bs-example
+      #myCarousel(class='carousel slide', data-interval='false', data-ride='carousel')
+        // Carousel items
+        .carousel-inner
+          .active.item
+            img(id='location', src='/images/location.png')
+            .carousel-caption
+              h3 1. On Prem Secure Connection
+              p This is nice placeholder text.
+          .item
+            img(id='dataworks', src='/images/dataworks.png')
+            .carousel-caption
+              h3 2. Data Works
+              p Nobody reads this text. Why would they? Why bother...
+          .item
+            img(id='database', src='/images/database.png')
+            .carousel-caption
+              h3 3. Dash DB
+              p Details blah blah blah and more details and stuff.
+      // Controls buttons
+      div.control-buttons
+          input.btn.btn-info.prev-slide(type='button', value='Previous Slide')
+          input.btn.btn-info.next-slide(type='button', value='Next Slide')
+    block content

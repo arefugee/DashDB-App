@@ -1,0 +1,10 @@
+---
+applications:
+# replace the host variable below with your own unique one, as this one can be already taken
+- name: drinkOrDie
+  command: node app.js
+  memory: 512M
+  instances: 1
+  path: .
+  services:
+  - myDash

@@ -1,0 +1,97 @@
+tr:nth-child(even) {  
+    background-color: #CADCFF !important;
+}
+tr:nth-child(odd) {
+    background-color: #F4F8FF !important;
+}
+
+th {
+    background-color: #CADCFF !important;
+}
+
+tr {
+    color: #1F1F4C;
+}
+
+body{
+  background-image: url('/images/crossword.png');
+  background-repeat:repeat;
+}
+
+#list {
+  box-shadow: 0px 5px 5px #888888;   
+}
+
+.title {
+  text-align: center;
+}
+
+/* Coursel stuff below */
+
+.item{
+    background: #141624;    
+    text-align: center;
+    height: 300px !important;
+    margin-top: 20px;
+}
+
+.control-buttons{
+	text-align:center;
+}
+
+#myTable {
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 90px;
+}
+
+#myCarousel {
+box-shadow: 0px 5px 5px #888888;
+}
+
+
+.prev-slide {
+  margin-right: 15px !important;   
+  margin-top: 20px !important;
+}
+.next-slide {
+ margin-top: 20px !important;   
+}
+
+#location {
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: inline-block !important;
+    vertical-align: middle;
+    height: 25% !important;
+    margin-top: 70px;
+}
+
+#dataworks {
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: inline-block !important;
+    vertical-align: middle;
+    height: 20% !important;
+    margin-top: 85px;
+}
+
+#database {
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: inline-block !important;
+    vertical-align: middle;
+    height: 20% !important;
+    margin-top: 85px;
+}
+/*
+.carousel{
+	margin: 20px;
+}*/
